@@ -1,146 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta 
-    name ="description"
-    content="Campus Events - Eventos y Actividades Universitarias"
-    >
-    <title>CampusEvents - 😊</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar container">
-            <a href="#inicio">
-                CampusEvents
-            </a>
-            <ul class="nav-links">
-                <li>
-                     <a href="#inicio">Inicio</a>
-                </li>
-                <li>
-                     <a href="#eventos">Eventos</a>
-                </li>
-                <li>
-                     <a href="#mis-eventos">Mis Eventos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <h1>
-                Descubre lo que sucede en tu Universidad
-            </h1>
-            <p>
-                Encuentra conferencias, talleres, actividades culturales, deportivas, tecnológicas y farmear aura
-            </p>
-            <a href="#eventos">
-                Explorar Eventos
-            </a>
-        </section>
-        <section id="eventos">
-            <h2>Proximos eventos</h2>
-            <article>
-                <span>Tecnología</span>
-                <h3>Taller de Git y Github</h3>
-                <p>
-                    Aprende los fundamentos del control de versiones utilizando Git
-                </p>
-                <p>
-                    <strong>Fecha:</strong>27 de Agosto de 2026
-                </p>
-                <p>
-                    <strong>Hora:</strong> 10:00 AM
-                </p>
-                <p>
-                    <strong>Lugar:</strong> Laboratorio de Cómputo
-                </p>
-                <p>
-                    <strong>Cupo: </strong> 25 Participantes
-                </p>
-                <a href="#">Ver Detalles</a>
-            </article>
-            <article>
-                <span>Tecnología</span>
-                <h3>BeeHackaton</h3>
-                <p>
-                    Desarollo de soluciones de software
-                </p>
-                <p>
-                    <strong>Fecha:</strong>5 de Septiembre de 2026
-                </p>
-                <p>
-                    <strong>Hora:</strong> 8:00 AM
-                </p>
-                <p>
-                    <strong>Lugar:</strong> Plaza principal
-                </p>
-                <p>
-                    <strong>Cupo: </strong> Ilimitado
-                </p>
-                <a href="#">Ver Detalles</a>
-            </article>
-            <article>
-                <span>Deportes</span>
-                <h3>Taller de Futbol</h3>
-                <p>
-                    Participa en el taller de futbol con una reta para mejorar tus habilidades y aprender nuevas técnicas
-                </p>
-                <p>
-                    <strong>Fecha:</strong>3 de Noviembre de 2026
-                </p>
-                <p>
-                    <strong>Hora:</strong> 11:00 AM
-                </p>
-                <p>
-                    <strong>Lugar:</strong> Cancha de Futbol
-                </p>
-                <p>
-                    <strong>Cupo: </strong> 10 equipos de 7 jugadores
-                </p>
-                <a href="#">Ver Detalles</a>
-            </article>
-            <article>
-                <span>Periodismo</span>
-                <h3>Taller de Redacción Periodística</h3>
-                <p>
-                    Aprende los fundamentos principales de la redacción periodística
-                </p>
-                <p>
-                    <strong>Fecha:</strong>4 de Diciembre de 2026
-                </p>
-                <p>
-                    <strong>Hora:</strong> 10:00 AM
-                </p>
-                <p>
-                    <strong>Lugar:</strong> Cubiculo 204
-                </p>
-                <p>
-                    <strong>Cupo: </strong> 10 participantes
-                </p>
-                <a href="#">Ver Detalles</a>
-            </article>
-        </section>
-        <section id="mis-eventos">
-            <h2>Mis Eventos</h2>
-            <p>
-                Próximamente podrás consultar aquí los eventos en lo que te hayas registrado
-            </p>
-        </section>
-    </main>
-    <footer>  
-        <p>
-            <strong>
-                CampusEvents
-            </strong>
-        </p>
-        <p>
-            Proyecto Académico - Aplicacions de Internet
-        </p>
-    </footer>
-    
-</body>
-</html>
+:root{
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+    --color-text: #0f172a;
+    --color-text-secondary: #64748b;
+    --color-border: #e2e8f0;
+    --border-radius: 12px;
+    --shadow: 0 10px 30px rgba(15,23,42,0.08)
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+a{
+    color: inherit; /* quitar subrayado de los enlaces*/
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: min(1100px,90%);
+    margin-inline: auto;
+}
+
+.header{
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo{
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a{
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}
+
+.nav-links a:hover{
+    color: var(--color-primary);
+}
+
+.hero{
+    padding: 7rem 0;
+    background: linear-gradient(135deg,#eff6ff,#ffffff);
+}
+
+.hero.container{
+    max-width: 800px;
+    text-align: center; 
+}
+
+.hero.label,.section-label{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero.h1{
+    font-size: clamp(2.5rem,7vw,4.5rem);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+}
+
+.hero p{
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+
+}
+
+.button{
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+
+}
