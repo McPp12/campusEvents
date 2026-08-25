@@ -34,7 +34,7 @@ a { /* Link styles */
 }
 
 ul { /* List styles */
-    list-style: none;
+    list-style: none;   
 }
 
 .container {
@@ -53,13 +53,13 @@ ul { /* List styles */
 .navbar {
     min-height: 70px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 2rem;
 }
 
 .logo{
-    font-size: 1.35rem;
+    font-size: 1.35rem; 
     font-weight: 700;
     color: var (--color-primary);
 }
@@ -69,11 +69,35 @@ ul { /* List styles */
     gap: 1.5rem;   
 }
 
-.nav-links a {
-    color: var(--color-text-secondary);
-    font-weight: 600;
+.nav-links a:hover {
+    color: var(--color-primary);
 }
 
+.hero{
+    padding: 7rem 0;
+    background: linear-gradient(135deg, #EFF6FF, #FFFFFF);
+}
+
+.hero .container{
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero-label, .section label{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-primary);
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem ;
+}
+
+.hero h1{
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+}
 .hero p{
     max-width: 650px;
     margin: 0 auto 2rem;
