@@ -4,7 +4,7 @@
 
 ## HMTL
 
-Hicimos una plataforma que permite registrar eventos de cualquier tipo desde usar la expland, hacer un torneo de futbol, hasta usar los laboratorios de forma que se pueda visualizar como una tipo agenda de todos estos eventos, de modo que se combino el uso de HTML, CSS y Git para su creación.
+```Hicimos una plataforma que permite registrar eventos de cualquier tipo desde usar la expland, hacer un torneo de futbol, hasta usar los laboratorios de forma que se pueda visualizar como una tipo agenda de todos estos eventos, de modo que se combino el uso de HTML, CSS y Git para su creación.```
 
 ```
 <!DOCTYPE html>
@@ -269,8 +269,7 @@ ul { /* List styles */
 }
 ```
 ## ¿Que es Flexbox y como funciona?
-```Es un sistema de diseño de CSS que permite organizar y distribuir elementos dentro de un contenedor de forma flexible. Es especialmente útil para crear filas, columnas, menús de navegación, tarjetas y diseños adaptables a diferentes tamaños de pantalla.
-```
+```Es un sistema de diseño de CSS que permite organizar y distribuir elementos dentro de un contenedor de forma flexible. Es especialmente útil para crear filas, columnas, menús de navegación, tarjetas y diseños adaptables a diferentes tamaños de pantalla.```
 
 ## Como trabaja "POSITION" en HTML
 
