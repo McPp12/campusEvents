@@ -2,7 +2,10 @@
 
 ## Código Trabajado
 
+## HMTL
+
 Hicimos una plataforma que permite registrar eventos de cualquier tipo desde usar la expland, hacer un torneo de futbol, hasta usar los laboratorios de forma que se pueda visualizar como una tipo agenda de todos estos eventos, de modo que se combino el uso de HTML, CSS y Git para su creación.
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -144,10 +147,135 @@ Hicimos una plataforma que permite registrar eventos de cualquier tipo desde usa
 </body>
 </html>
 ```
+## ¿Que es CSS?
+```Es el lenguaje utilizado para definir la apariencia y el diseño de una página web. Con CSS puedes controlar colores, tamaños, márgenes, posiciones, tipografías, fondos, sombras, animaciones y adaptación a distintos dispositivos.```
+## CSS
+```
+ Se desarrolló una hoja de estilos CSS para diseñar una página web moderna, limpia y responsiva. Se definieron variables globales para controlar los colores, bordes, radios y sombras del sitio. También se establecieron estilos generales para eliminar márgenes predeterminados, configurar la tipografía y organizar los elementos mediante Flexbox. El diseño incluye una barra de navegación fija, una sección principal o hero con degradado, enlaces interactivos y un botón con efectos de transición.
 
-choro para el CSS y deben de explicar que es CSS
-``` css
+ :root{
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-background: #F8FAFC;
+    --color-surface: #FFFFFF;
+    --color-text: #0F172A;
+    --color-text-secondary: #64748B;
+    --color-border: #E2E8F0;
+    --border-radius: 12px;
+    --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+a { /* Link styles */
+    color: inherit;
+    text-decoration: none;
+}
+
+ul { /* List styles */
+    list-style: none;   
+}
+
+.container {
+    width: min (1100px, 90%);
+    margin-inline: auto;
+}
+
+.header {
+    background-color: var(--color-surface);
+    box-shadow: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo{
+    font-size: 1.35rem; 
+    font-weight: 700;
+    color: var (--color-primary);
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.5rem;   
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.hero{
+    padding: 7rem 0;
+    background: linear-gradient(135deg, #EFF6FF, #FFFFFF);
+}
+
+.hero .container{
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero-label, .section label{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-primary);
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem ;
+}
+
+.hero h1{
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+}
+.hero p{
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: var (--color-text-secondary);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
 ```
 ## ¿Que es Flexbox y como funciona?
+```Es un sistema de diseño de CSS que permite organizar y distribuir elementos dentro de un contenedor de forma flexible. Es especialmente útil para crear filas, columnas, menús de navegación, tarjetas y diseños adaptables a diferentes tamaños de pantalla.
+```
 
 ## Como trabaja "POSITION" en HTML
+
+"  POSITION" se refiere a la forma en que se ubica un elemento dentro de una página web. Aunque se utiliza junto con HTML, pertenece a CSS.
+
+Su función es determinar si un elemento permanece en su posición normal, si puede desplazarse, si se coloca en una ubicación específica, si queda fijo en la pantalla o si se mantiene visible al desplazarse por la página.
+
+También define respecto a qué elemento se calcula su ubicación y cómo se relaciona con los demás elementos. Por eso, position permite controlar la posición, el movimiento y la superposición de los elementos en el diseño de una página.
